@@ -1,0 +1,42 @@
+/* -------------------- RESET -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------- HTML, BODY -------------------- */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+}
+
+
+/* -------------------- NAV -------------------- */
+
+nav {
+    background-color: #000086;
+}
+
+/* -------------------- BOTON CONTACTANOS -------------------- */
+.cambioFuenteLetra{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 20px;
+}
+.sinCambioDeLetra{
+    word-spacing: 2px;
+}
+
+/* -------------------- BOTON CONTACTANOS -------------------- */
+.boton--color {
+    background-color: #000086;
+}
+
+.hover--boton:hover{
+    background-color: #010133;
+}

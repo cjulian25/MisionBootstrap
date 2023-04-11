@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Mision Final Bootstrap</title>
+</head>
+
+<body>
+    <!------------------------------------------------- INICIO NAV ------------------------------------------------->
+    <nav class="navbar navbar-expand-lg tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light ms-3 fs-2" href="#">LOGO</a>
+            <button class="navbar-toggler border border-2 border-ligth rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./list.svg" alv="">
+          </button>
+        </div>
+        <div class="collapse navbar-collapse me-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-light fs-5 ms-2 me-4" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fs-5 ms-1 me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenido</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Acerca</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Opiniones</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn text-light fs-5 ps-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Registro
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title fs-5" id="exampleModalLabel">
+                                        Registro
+                                    </h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Ingresa los datos para cominucarnos pronto
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Correo</label>
+                                            <input type="email" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Telefono</label>
+                                            <input type="number" class="form-control" id="recipient-name">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        cancelar
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Registrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!------------------------------------------------- INICIO DIV MAIN ------------------------------------------------->
+    <div class="row col-10 d-flex justify-content-center me-auto ms-auto mt-5 mb-5 pt-5">
+        <div class="row col-12 d-flex justify-content-center gap-5">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 d-flex flex-column justify-content-center">
+                <div class="mt-3">
+                    <h2>COEX - Desarrollo de Talento TI</h2>
+                    <p class="mt-2 mt-lg-4 mt-xl-4 mt-xxl-4 fs-5 cambioFuenteLetra">Todo el mundo debería saber programar <span class="sinCambioDeLetra">porque te enseña a pensar - Steve Jobs</span></p>
+                    <p class="mt-2 mt-lg-5 mt-xl-5 mt-xxl-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem!</p>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn text-light boton--color w-50 h-100 hover--boton" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Contactanos
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title fs-5" id="exampleModal2Label">
+                                        Registro
+                                    </h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Ingresa los datos para cominucarnos pronto
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Correo</label>
+                                            <input type="email" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Telefono</label>
+                                            <input type="number" class="form-control" id="recipient-name">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        cancelar
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Registrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 p-0">
+                <img src="./imagen.webp" alt=" " class="w-100">
+            </div>
+        </div>
+
+        <!------------------------------------------------- INICIO CLIENTES ------------------------------------------------->
+        <div class="row col-12 mt-5 pt-5">
+            <div class="col-12 text-center mb-5">
+                <h2>¿Que opinan nuestros(as) clientes?</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-5">
+                    <img src="./iconfinder-4-avatar-2754580_120522.svg" alt=" " class="w-25 d-flex ms-auto me-auto mb-3">
+                    <p class="text-center mb-4 fs-5"><strong>Tania Cruz</strong></p>
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, beatae.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-5">
+                    <img src="./iconfinder-7-avatar-2754582_120519.svg" alt=" " class="w-25 d-flex ms-auto me-auto mb-3">
+                    <p class="text-center mb-4 fs-5"><strong>Ramón Viña</strong></p>
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-5">
+                    <img src="./iconfinder-12-avatar-2754577_120517.svg" alt=" " class="w-25 d-flex ms-auto me-auto mb-3">
+                    <p class="text-center mb-4 fs-5"><strong>Laura Acosta</strong></p>
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                        <img src="./star-fill.svg" alv=" " class="me-1">
+                    </div>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, placeat?</p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------- INICIO ACORDEON ------------------------------------------------->
+        <div class="col-12 mt-5 mb-5 pt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item border border-bottom-0 border-black rounded-0">
+                    <h2 class="accordion-header rounded-0">
+                        <button class="accordion-button rounded-0 border border-black border-bottom-0 border-top-0 border-end-0 border-start-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Pregunta 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body border border-bottom-0 border-top-1 border-start-0 border-end-0 border-black">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border border-bottom-0 border-top-1 border-black">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed rounded-0 border border-black border-bottom-1 border-top-0 border-end-0 border-start-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Pregunta 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body border border-bottom-1 border-top-0 border-start-0 border-end-0 border-black">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+                            well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border border-bottom-0 border-top-0 border-black">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed rounded-0 border border-black border-bottom-1 border-top-0 border-end-0 border-start-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                        Pregunta 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body border border-bottom-1 border-top-0 border-start-0 border-end-0 border-black">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+                            well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border border-bottom-1 border-top-0 border-black">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button border border-bottom-0 border-top-0 border-start-0 border-end-0 border-black collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            Pregunta 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body border border-bottom-0 border-top-1 border-start-0 border-end-0 border-black">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------- INICIO FOOTER ------------------------------------------------->
+    <footer class="mt-5 d-flex ms-auto me-auto">
+        <div class="col-11 row d-flex justify-content-between ms-auto me-auto mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3 mb-5 me-2">
+                <img src="./logo - coex.svg" alv="" class="w-75 d-flex ms-auto me-auto mb-3">
+                <p class="text-center fs-5">&#169; Julian Carrillo</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mb-5">
+                <p class="text-center text-xl-start text-xxl-start"><strong>Empresa</strong></p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Acerca</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Servicio</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Gerencia</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Fabrica Software</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mb-5">
+                <p class="text-center text-xl-start text-xxl-start"><strong>Educación</strong></p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Selección</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Módulos</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Preguntas</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Mantenimiento</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mb-5">
+                <p class="text-center text-xl-start text-xxl-start"><strong>Contacto</strong></p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Dirección: Call 35 # 32 - 85</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Teléfono: (+57) 311 883 9480</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Correo: gerencia@coex.com.co</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
